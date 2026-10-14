@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-black: #080D16;
+    --brand-navy: #142B49;
+    --brand-cyan: #00B9F2;
+    --brand-white: #F5F7FA;
+    --brand-muted: #64748B;
+  }
+
+  body {
+    background-color: #080D16;
+    color: #F5F7FA;
+    font-family: 'Plus Jakarta Sans', 'Manrope', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar for modern sleek tech feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080D16;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #142B49;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00B9F2;
+  }
+}
+
+/* Subtle tech grid backdrop */
+.tech-grid-pattern {
+  background-image: linear-gradient(to right, rgba(0, 185, 242, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 185, 242, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.tech-radial-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(0, 185, 242, 0.15) 0%, rgba(20, 43, 73, 0.25) 45%, transparent 70%);
+}
+
+/* Mobile layout safeguards: preserve desktop styling. */
+@media (max-width: 767px) {
+  html, body, #root { width: 100%; min-width: 0; max-width: 100%; }
+  body { overflow-x: clip; }
+  main, section, footer, header { min-width: 0; max-width: 100%; }
+  main *, footer *, section * { min-width: 0; }
+  img, video, iframe { max-width: 100%; }
+  input, textarea, select { max-width: 100%; min-width: 0; }
+  .grid > * { min-width: 0; }
+  h1, h2, h3, p { overflow-wrap: break-word; }
+}

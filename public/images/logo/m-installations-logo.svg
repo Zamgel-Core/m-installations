@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Circular Black Background -->
+  <circle cx="250" cy="250" r="240" fill="#080D16" stroke="#1E3250" stroke-width="2"/>
+  
+  <!-- Main "M" & Integrated Security Camera Mark -->
+  <g fill="#FFFFFF">
+    <!-- Left vertical stem of M -->
+    <polygon points="120,110 160,110 160,285 120,285" />
+    
+    <!-- Central V diagonals of M -->
+    <!-- Left diagonal going down -->
+    <polygon points="160,110 200,110 248,260 216,260" />
+    
+    <!-- Right diagonal going up towards the camera bracket -->
+    <polygon points="216,260 252,260 300,110 262,110" />
+    
+    <!-- Camera mounting arm & bracket extending from right of M -->
+    <path d="M 285,110 L 360,110 C 378,110 392,124 392,142 L 392,152 L 368,152 L 368,142 C 368,136 363,131 357,131 L 305,131 Z" />
+    
+    <!-- Camera Top Cap / Mount base -->
+    <path d="M 320,132 L 380,132 C 384,132 387,135 387,139 L 387,148 L 313,148 L 313,139 C 313,135 316,132 320,132 Z" />
+    
+    <!-- Camera Dome Upper Housing -->
+    <path d="M 302,154 L 398,154 C 408,154 416,162 416,172 L 416,178 C 416,215 390,228 350,228 C 310,228 284,215 284,178 L 284,172 C 284,162 292,154 302,154 Z" />
+    
+    <!-- Horizontal seam accent on upper housing -->
+    <rect x="290" y="174" width="120" height="4" rx="2" fill="#080D16" />
+    
+    <!-- Lower Eyeball / Dome Sphere -->
+    <path d="M 295,232 C 295,232 305,305 365,305 C 415,305 405,232 405,232 Z" />
+  </g>
+  
+  <!-- Camera Lens Details inside Eyeball (Cutouts using dark circle and highlights) -->
+  <circle cx="366" cy="265" r="26" fill="#080D16" />
+  <circle cx="366" cy="265" r="16" fill="#FFFFFF" />
+  <circle cx="366" cy="265" r="10" fill="#080D16" />
+  <circle cx="369" cy="262" r="3" fill="#FFFFFF" />
+  <!-- Crescent highlight on camera ball -->
+  <path d="M 312,242 C 304,252 304,272 318,284 C 314,280 310,268 312,242 Z" fill="#080D16" />
+
+  <!-- INSTALLATIONS Typography -->
+  <text 
+    x="250" 
+    y="358" 
+    text-anchor="middle" 
+    fill="#FFFFFF" 
+    font-family="'Plus Jakarta Sans', 'Inter', 'Montserrat', Arial, sans-serif" 
+    font-weight="800" 
+    font-size="34" 
+    letter-spacing="5">
+    INSTALLATIONS
+  </text>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGrad-6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1D33" />
+      <stop offset="50%" stop-color="#0A1424" />
+      <stop offset="100%" stop-color="#060A12" />
+    </linearGradient>
+    <radialGradient id="radialGlow-6" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="rgba(0, 185, 242, 0.2)" />
+      <stop offset="100%" stop-color="rgba(0, 185, 242, 0)" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="600" fill="url(#bgGrad-6)" />
+  <rect width="800" height="600" fill="url(#radialGlow-6)" />
+
+  <!-- Grid lines -->
+  <g stroke="rgba(0, 185, 242, 0.08)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+    <line x1="100" y1="0" x2="100" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="500" y1="0" x2="500" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+    <line x1="700" y1="0" x2="700" y2="600" />
+  </g>
+
+  <!-- Concentric Rings -->
+  <circle cx="400" cy="270" r="160" fill="none" stroke="rgba(0, 185, 242, 0.15)" stroke-width="2" />
+  <circle cx="400" cy="270" r="100" fill="none" stroke="rgba(0, 185, 242, 0.25)" stroke-width="2" stroke-dasharray="6 6" />
+
+  <!-- Center Card -->
+  <rect x="340" y="210" width="120" height="120" rx="24" fill="#080D16" stroke="#00B9F2" stroke-width="2" />
+
+  <!-- Center Icon -->
+  <g transform="translate(372, 242) scale(2.4)" stroke="#00B9F2" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </g>
+
+  <!-- Precision Corner Brackets -->
+  <path d="M 40,60 L 40,40 L 60,40" fill="none" stroke="#00B9F2" stroke-width="3" />
+  <path d="M 760,60 L 760,40 L 740,40" fill="none" stroke="#00B9F2" stroke-width="3" />
+  <path d="M 40,540 L 40,560 L 60,560" fill="none" stroke="#00B9F2" stroke-width="3" />
+  <path d="M 760,540 L 760,560 L 740,560" fill="none" stroke="#00B9F2" stroke-width="3" />
+
+  <!-- Footer Banner -->
+  <rect x="50" y="490" width="700" height="70" rx="12" fill="rgba(8, 13, 22, 0.9)" stroke="rgba(30, 50, 80, 0.9)" stroke-width="1.5" />
+  <text x="80" y="534" fill="#F5F7FA" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5">Access Control Magnetic Door Strike</text>
+  <text x="720" y="534" text-anchor="end" fill="#00B9F2" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600" font-size="14" letter-spacing="1.5">ACCESS CONTROL</text>
+</svg>

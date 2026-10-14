@@ -1,0 +1,5 @@
+# Robots.txt for M Installations (Production & Demo configuration)
+User-agent: *
+Allow: /
+
+Sitemap: https://minstallations.com/sitemap.xml
