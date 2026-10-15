@@ -49,12 +49,12 @@ export const Header: React.FC<HeaderProps> = ({
             : 'bg-transparent border-b border-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4 lg:gap-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-8 h-[72px] sm:h-20 flex items-center justify-between gap-2 sm:gap-3 lg:gap-8">
           {/* Zone 1: Brand Wordmark */}
           <a
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
-            className="flex min-w-0 items-center gap-2 sm:gap-3 shrink focus-visible:outline-none"
+            className="flex min-w-0 flex-1 lg:flex-none items-center overflow-hidden focus-visible:outline-none [&>div]:min-w-0"
             aria-label="M Installations Home"
           >
             <Logo size="md" />
@@ -75,7 +75,7 @@ export const Header: React.FC<HeaderProps> = ({
           </nav>
 
           {/* Zone 3: Language & Primary Action */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             <div className="hidden sm:block">
               <LanguageSwitcher
                 currentLang={language}
@@ -87,9 +87,10 @@ export const Header: React.FC<HeaderProps> = ({
               variant="primary"
               size="sm"
               onClick={onOpenQuote}
-              className="hidden sm:inline-flex"
+              className="hidden min-[400px]:inline-flex !px-2.5 !py-2 !text-[11px] lg:!px-3.5 lg:!text-xs"
             >
-              {t.nav.quoteCta}
+              <span className="lg:hidden">{language === 'es' ? 'Cotizar' : 'Quote'}</span>
+              <span className="hidden lg:inline">{t.nav.quoteCta}</span>
             </Button>
 
             {/* Mobile Menu Trigger */}
@@ -97,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({
               type="button"
               onClick={() => setIsMobileMenuOpen(true)}
               aria-label="Open navigation menu"
-              className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+              className="lg:hidden shrink-0 p-1.5 sm:p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
             >
               <Menu className="w-6 h-6" />
             </button>

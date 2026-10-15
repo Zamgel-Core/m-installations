@@ -1,8 +1,8 @@
-import React from 'react';
-import { SectionHeading } from '../ui/SectionHeading';
-import { siteConfig } from '../../config/site';
-import { Dictionary } from '../../i18n';
-import { ShieldCheck, MapPin, Wrench } from 'lucide-react';
+import React from "react";
+import { SectionHeading } from "../ui/SectionHeading";
+import { siteConfig } from "../../config/site";
+import { Dictionary } from "../../i18n";
+import { ShieldCheck, MapPin, Wrench } from "lucide-react";
 
 interface AboutSectionProps {
   t: Dictionary;
@@ -10,7 +10,10 @@ interface AboutSectionProps {
 
 export const AboutSection: React.FC<AboutSectionProps> = ({ t }) => {
   return (
-    <section id="about" className="py-20 lg:py-28 bg-[#080D16] border-t border-slate-800/80">
+    <section
+      id="about"
+      className="py-20 lg:py-28 bg-[#080D16] border-t border-slate-800/80"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           kicker={t.about.kicker}

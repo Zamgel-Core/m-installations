@@ -18,14 +18,14 @@ export const es = {
       "Soluciones de instalación confiables para hogares y negocios, desde sistemas de vigilancia hasta redes, audio y montaje de pantallas.",
     primaryCta: "Solicitar Cotización",
     secondaryCta: "Ver Nuestro Trabajo",
-    badgeExp: "5 Años de Experiencia en Instalaciones",
+    badgeExp: "10 Años de Experiencia en Instalaciones",
     badgeLocal: "Servicio en el Área Metropolitana de Houston",
     activeScanningNotice: "Vista Objetivo de Cámara Ilustrativa",
     imageAlt:
       "Cámara de seguridad domo 4K y monitor con vista en vivo multicanal instalados en una residencia moderna de noche",
   },
   trust: {
-    experienceTitle: "5 Años de Experiencia",
+    experienceTitle: "10 Años de Experiencia",
     experienceDesc:
       "Experiencia técnica personal en instalaciones de vigilancia y sistemas audiovisuales.",
     solutionsTitle: "Residencial y Comercial",
@@ -228,7 +228,7 @@ export const es = {
     title: "Mano de Obra Independiente y Confiabilidad Técnica",
     subtitle:
       "Soluciones directas, honestas y de alta calidad para propiedades en Houston.",
-    p1: "M Installations es un negocio de instalación de tecnología independiente fundado y con sede en Houston, Texas. Con aproximadamente un año operando como negocio independiente, respaldado por alrededor de cinco años de experiencia técnica personal en instalaciones.",
+    p1: "M Installations es un negocio de instalación de tecnología independiente fundado y con sede en Houston, Texas. Con aproximadamente un año operando como negocio independiente, respaldado por alrededor de diez años de experiencia técnica personal en instalaciones.",
     p2: "Ya sea protegiendo un hogar con cámaras exteriores nítidas o cableando un negocio comercial con redes estructuradas y cerraduras magnéticas, nuestro enfoque es siempre el mismo: mano de obra limpia, colocación confiable de equipos y comunicación directa.",
     p3: "Tratamos cada propiedad con el máximo respeto: guiando el cableado de forma ordenada y fuera de la vista, anclando firmemente los equipos y probando cada conexión antes de terminar.",
     statExperience: "Años de Experiencia en Instalación",

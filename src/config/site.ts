@@ -10,8 +10,8 @@ export const siteConfig: SiteConfig = {
   email: 'mendozachloe1818@gmail.com',
   facebookUrl: 'https://www.facebook.com/profile.php?id=61566468235225',
   location: 'Houston, Texas',
-  experienceYears: 5, // ~5 years personal installation experience
-  companyYears: 1,    // ~1 year as an independent business
+  experienceYears: 10, // ~10 years personal installation experience
+  companyYears: 5,    // ~5 year as an independent business
   logo: {
     svg: '/images/logo/m-installations-logo.svg',
     png: '/images/logo/m-installations-logo.png',

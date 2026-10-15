@@ -16,14 +16,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-6 pb-16 lg:py-24 tech-grid-pattern"
+      className="relative flex items-center justify-center overflow-hidden pt-8 pb-12 sm:pt-12 sm:pb-16 lg:py-24 tech-grid-pattern"
     >
       {/* Ambient Radial Blue Lighting */}
       <div className="absolute inset-0 tech-radial-glow pointer-events-none" />
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#00B9F2]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-9 sm:gap-12 lg:gap-8 items-center">
           {/* Left Column: Headlines & CTAs */}
           <div className="lg:col-span-7 text-center lg:text-left space-y-6">
             {/* Unboxed editorial location kicker */}
@@ -43,7 +43,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </p>
 
             {/* Description */}
-            <p className="text-sm sm:text-base text-[#64748B] max-w-xl mx-auto lg:mx-0 leading-relaxed [text-wrap:balance]">
+            <p className="text-sm sm:text-base text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed [text-wrap:balance]">
               {t.hero.description}
             </p>
 

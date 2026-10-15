@@ -22,13 +22,13 @@ export const ResidentialSection: React.FC<ResidentialSectionProps> = ({
   return (
     <section id="residential" className="py-16 sm:py-24 bg-[#0A101C] border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-gradient-to-br from-[#0F1D33] to-[#0A1220] border border-[#00B9F2]/20 p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        <div className="rounded-3xl bg-gradient-to-br from-[#0F1D33] to-[#0A1220] border border-[#00B9F2]/20 p-5 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
           {/* Subtle light glow accent */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#00B9F2]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
             {/* Left Content */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-7 min-w-0 space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#00B9F2]">
                 <Home className="w-4 h-4" />
                 <span>{t.sectors.residential.tagline}</span>
@@ -51,13 +51,14 @@ export const ResidentialSection: React.FC<ResidentialSectionProps> = ({
                 ))}
               </div>
 
-              <div className="pt-4">
+              <div className="pt-4 min-w-0">
                 <Button
                   variant="primary"
                   size="lg"
                   onClick={handleCta}
                   icon={<ArrowRight className="w-4 h-4" />}
                   iconPosition="right"
+                  className="w-full sm:w-auto max-w-full whitespace-normal text-center break-words px-3 sm:px-6"
                 >
                   {t.sectors.residential.cta}
                 </Button>
@@ -65,9 +66,9 @@ export const ResidentialSection: React.FC<ResidentialSectionProps> = ({
             </div>
 
             {/* Right Graphic Feature Box */}
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 min-w-0">
               <div className="rounded-2xl bg-[#080D16]/90 border border-slate-700/60 p-6 sm:p-8 space-y-4 shadow-xl">
-                <div className="flex items-center justify-between pb-4 border-b border-slate-800">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-slate-800">
                   <div className="flex items-center gap-2 text-xs font-bold text-white uppercase tracking-wider">
                     <ShieldCheck className="w-4 h-4 text-[#00B9F2]" />
                     <span>Residential Safeguards</span>
@@ -76,17 +77,17 @@ export const ResidentialSection: React.FC<ResidentialSectionProps> = ({
                 </div>
 
                 <div className="space-y-3 text-xs text-slate-300">
-                  <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex justify-between items-center">
-                    <span>Front Entrance / Porch Surveillance</span>
-                    <span className="text-[#00B9F2] font-semibold">HD / 2K+</span>
+                  <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex justify-between items-center gap-3">
+                    <span className="min-w-0">Front Entrance / Porch Surveillance</span>
+                    <span className="shrink-0 max-w-[38%] text-right text-[#00B9F2] font-semibold">HD / 2K+</span>
                   </div>
-                  <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex justify-between items-center">
-                    <span>Driveway & Vehicle Perimeter</span>
-                    <span className="text-[#00B9F2] font-semibold">Night Vision</span>
+                  <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex justify-between items-center gap-3">
+                    <span className="min-w-0">Driveway & Vehicle Perimeter</span>
+                    <span className="shrink-0 max-w-[38%] text-right text-[#00B9F2] font-semibold">Night Vision</span>
                   </div>
-                  <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex justify-between items-center">
-                    <span>Living Room Flush TV Wall Mount</span>
-                    <span className="text-[#00B9F2] font-semibold">Hidden Wires</span>
+                  <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex justify-between items-center gap-3">
+                    <span className="min-w-0">Living Room Flush TV Wall Mount</span>
+                    <span className="shrink-0 max-w-[38%] text-right text-[#00B9F2] font-semibold">Hidden Wires</span>
                   </div>
                 </div>
 
